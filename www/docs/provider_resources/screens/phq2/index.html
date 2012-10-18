@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>PHQ - 2 Assessment</title> 
+	<link rel="stylesheet"  href="../../../../jquery.mobile/jquery.mobile.css" />
+	<script src="../../../../jquery.mobile/jquery.js"></script>
+	<script src="../../../../jquery.mobile/jquery.mobile.js"></script>
+</head> 
+<body> 
+
+	<div data-role="page" class="type-interior">
+<script>
+  		var myform= new formtowizard({
+			formid: 'phq2',
+			persistsection: false,
+			revealfx: ['none']
+		})
+</script>
+		<div data-role="header" data-theme="b">
+		<h1>PHQ - 2</h1>
+		<a href="#" data-rel="back" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left jqm-home" onclick="$this.removeData('formtowizard');">Back</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    <p>Over the past two weeks, how often have you been bothered by either of the following problems?</p>
+		<form action="phq2_result.php" method="get" data-transition="pop" id="phq2">
+			<fieldset id="phq2A" data-role="controlgroup" class="sectionwrap">
+			<legend><b>A) Little interest or pleasure in doing things:</b></legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="phq2A" id="phq2A0" value="0" checked="checked" />
+         		<label for="phq2A0">0 - Not at all</label>
+
+         		<input type="radio" name="phq2A" id="phq2A1" value="1"/>
+         		<label for="phq2A1">1 - Several days</label>
+
+         		<input type="radio" name="phq2A" id="phq2A2" value="2"/>
+         		<label for="phq2A2">2 - More than half the days</label>
+
+         		<input type="radio" name="phq2A" id="phq2A3" value="3"/>
+         		<label for="phq2A3">3 - Nearly every day</label>
+         		</div>
+    		</fieldset>
+
+    		<fieldset id="phq2B" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>B) Feeling down, depressed, or hopeless:</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq2B" id="phq2B0" value="0" checked="checked" />
+         		<label for="phq2B0">0 - Not at all</label>
+
+         		<input type="radio" name="phq2B" id="phq2B1" value="1"/>
+         		<label for="phq2B1">1 - Several days</label>
+
+         		<input type="radio" name="phq2B" id="phq2B2" value="2"/>
+         		<label for="phq2B2">2 - More than half the days</label>
+
+         		<input type="radio" name="phq2B" id="phq2B3" value="3"/>
+         		<label for="phq2B3">3 - Nearly every day</label>
+				<button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+    			</div>
+				</fieldset>
+			</form>
+			</div><!--/content-primary -->		
+		</div><!-- /page -->
+ 
+		</body>
+		</html>

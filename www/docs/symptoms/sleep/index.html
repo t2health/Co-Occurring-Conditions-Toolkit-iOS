@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> 
+	<title>Sleep Symptoms</title> 
+</head> 
+<body> 
+<div data-role="page" data-dom-cache="true">
+	<div data-role="header" data-theme="b" data-position="inline">
+	<a href="#" data-rel="back" data-icon="arrow-l"  data-direction="reverse" class="ui-btn-left" onclick="clearChecked()">Back</a>
+		<h1>Sleep Symptoms</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+<form action="results.php" method="get" data-transition="pop" id="symptoms">
+<div data-role="fieldcontain">
+ 	<fieldset data-role="controlgroup">
+		<legend>Select Sleep Symptoms</legend>
+		<div class="symptoms">
+			<input type="checkbox" name="pain" id="pain"  rel="pain" />
+			<label for="pain">Break-through pain</label>
+	
+			<input type="checkbox" name="fear" id="fear" rel="fear" />
+			<label for="fear">Fear of sleep due to nightmares</label>
+	
+			<input type="checkbox" name="ruminations" id="ruminations" rel="ruminations" />
+			<label for="ruminations">Difficulty falling asleep due to ruminations</label>
+			
+			<input type="checkbox" name="withdrawal" id="withdrawal" rel="withdrawal" />
+			<label for="withdrawal">Difficulty with sleep due to withdrawal symptoms</label>
+			
+			<input type="checkbox" name="AM" id="AM" rel="AM" />
+			<label for="AM">Early AM/nighttime awakening (unexplained)</label>
+		</div>
+    </fieldset>
+            <button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+</div>
+</form>			
+	</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

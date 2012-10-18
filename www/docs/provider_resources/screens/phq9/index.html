@@ -1,0 +1,203 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>PHQ - 9 Assessment</title> 
+	<link rel="stylesheet"  href="../../../../jquery.mobile/jquery.mobile.css" />
+	<link rel="stylesheet" href="../../../../jquery.mobile/js/jquery.multipage.css" /> 
+	<script src="../../../../jquery.mobile/jquery.js"></script>
+	<script src="../../../../jquery.mobile/jquery.mobile.js"></script>
+</head> 
+<body> 
+	<div data-role="page" class="type-interior">
+	 <script type="text/javascript">
+		var myform=new formtowizard({
+			formid: 'phq9',
+			persistsection: false,
+			revealfx: ['none']
+		})
+	</script> 
+		<div data-role="header" data-theme="b">
+		<h1>PHQ - 9</h1>
+		<a href="#" data-rel="back" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p>Over the last two weeks, how often have you been bothered by any of the following problems?</p>
+		<form action="results.php" method="get" data-transition="pop" id="phq9">
+			<fieldset id="phq91" data-role="controlgroup" class="sectionwrap">
+			<legend><b>1. Little interest or pleasure in doing things</b></legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="phq91" id="phq910" value="0" checked="checked" />
+         		<label for="phq910">0 - Not at all</label>
+
+         		<input type="radio" name="phq91" id="phq911" value="1"/>
+         		<label for="phq911">1 - Several days</label>
+
+         		<input type="radio" name="phq91" id="phq912" value="2"/>
+         		<label for="phq912">2 - More than half the days</label>
+
+         		<input type="radio" name="phq91" id="phq913" value="3"/>
+         		<label for="phq913">3 - Nearly every day</label>
+         		</div>
+    		</fieldset>
+
+    		<fieldset id="phq92" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>2. Feeling down, depressed, or hopeless</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq92" id="phq920" value="0" checked="checked" />
+         		<label for="phq920">0 - Not at all</label>
+
+         		<input type="radio" name="phq92" id="phq921" value="1"/>
+         		<label for="phq921">1 - Several days</label>
+
+         		<input type="radio" name="phq92" id="phq922" value="2"/>
+         		<label for="phq922">2 - More than half the days</label>
+
+         		<input type="radio" name="phq92" id="phq923" value="3"/>
+         		<label for="phq923">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+
+    		<fieldset id="phq93" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>3. Trouble falling or staying asleep, or sleeping too much</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq93" id="phq930" value="0" checked="checked" />
+         		<label for="phq930">0 - Not at all</label>
+
+         		<input type="radio" name="phq93" id="phq931" value="1"/>
+         		<label for="phq931">1 - Several days</label>
+
+         		<input type="radio" name="phq93" id="phq932" value="2"/>
+         		<label for="phq932">2 - More than half the days</label>
+
+         		<input type="radio" name="phq93" id="phq933" value="3"/>
+         		<label for="phq933">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="phq94" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>4. Feeling tired or having little energy</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq94" id="phq940" value="0" checked="checked" />
+         		<label for="phq940">0 - Not at all</label>
+
+         		<input type="radio" name="phq94" id="phq941" value="1"/>
+         		<label for="phq941">1 - Several days</label>
+
+         		<input type="radio" name="phq94" id="phq942" value="2"/>
+         		<label for="phq942">2 - More than half the days</label>
+
+         		<input type="radio" name="phq94" id="phq943" value="3"/>
+         		<label for="phq943">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="phq95" data-role="controlgroup" class="sectionwrap">
+    		    <legend><b>5. Poor appetite or overeating</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq95" id="phq950" value="0" checked="checked" />
+         		<label for="phq950">0 - Not at all</label>
+
+         		<input type="radio" name="phq95" id="phq951" value="1"/>
+         		<label for="phq951">1 - Several days</label>
+
+         		<input type="radio" name="phq95" id="phq952" value="2"/>
+         		<label for="phq952">2 - More than half the days</label>
+
+         		<input type="radio" name="phq95" id="phq953" value="3"/>
+         		<label for="phq953">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="phq96" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>6. Feeling bad about yourself—or that you are a failure or have let yourself or your family down</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq96" id="phq960" value="0" checked="checked" />
+         		<label for="phq960">0 - Not at all</label>
+
+         		<input type="radio" name="phq96" id="phq961" value="1"/>
+         		<label for="phq961">1 - Several days</label>
+
+         		<input type="radio" name="phq96" id="phq962" value="2"/>
+         		<label for="phq962">2 - More than half the days</label>
+
+         		<input type="radio" name="phq96" id="phq963" value="3"/>
+         		<label for="phq963">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="phq97" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>7. Trouble concentrating on things, such as reading the newspaper or watching television</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq97" id="phq970" value="0" checked="checked" />
+         		<label for="phq970">0 - Not at all</label>
+
+         		<input type="radio" name="phq97" id="phq971" value="1"/>
+         		<label for="phq971">1 - Several days</label>
+
+         		<input type="radio" name="phq97" id="phq972" value="2"/>
+         		<label for="phq972">2 - More than half the days</label>
+
+         		<input type="radio" name="phq97" id="phq973" value="3"/>
+         		<label for="phq973">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="phq98" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>8. Moving or speaking so slowly that other people could have noticed. Or the opposite— being so fidgety or restless that you have been moving around a lot more than usual</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq98" id="phq980" value="0" checked="checked" />
+         		<label for="phq980">0 - Not at all</label>
+
+         		<input type="radio" name="phq98" id="phq981" value="1"/>
+         		<label for="phq981">1 - Several days</label>
+
+         		<input type="radio" name="phq98" id="phq982" value="2"/>
+         		<label for="phq982">2 - More than half the days</label>
+
+         		<input type="radio" name="phq98" id="phq983" value="3"/>
+         		<label for="phq983">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="phq99" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>9. Thoughts that you would be better off dead, or of hurting yourself in some way</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="phq99" id="phq990" value="0" checked="checked" />
+         		<label for="phq990">0 - Not at all</label>
+
+         		<input type="radio" name="phq99" id="phq991" value="1"/>
+         		<label for="phq991">1 - Several days</label>
+
+         		<input type="radio" name="phq99" id="phq992" value="2"/>
+         		<label for="phq992">2 - More than half the days</label>
+
+         		<input type="radio" name="phq99" id="phq993" value="3"/>
+         		<label for="phq993">3 - Nearly every day</label>
+    			</div>
+				</fieldset>
+				
+    		<fieldset id="problems" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>10. If you checked off any problems, how <i>difficult</i> have these problems made it for you to do your work, take care of things at home, or get along with other people?</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="problems" id="phq9100" value="Not Difficult at All" checked="checked" />
+         		<label for="phq9100">0 - Not Difficult at All</label>
+
+         		<input type="radio" name="problems" id="phq9101" value="Somewhat Difficult"/>
+         		<label for="phq9101">1 - Somewhat Difficult</label>
+
+         		<input type="radio" name="problems" id="phq9102" value="Very Difficult"/>
+         		<label for="phq9102">2 - Very Difficult</label>
+
+         		<input type="radio" name="problems" id="phq9103" value="Extremely Difficult"/>
+         		<label for="phq9103">3 - Extremely Difficult</label>
+				<button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+    			</div>
+				</fieldset>																												
+			</form>
+			</div><!--/content-primary -->		
+		</div><!-- /page -->
+
+		</body>
+		</html>

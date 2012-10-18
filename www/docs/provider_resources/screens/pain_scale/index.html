@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Pain Scale Assessment</title> 
+</head> 
+<body> 
+	<div data-role="page" class="type-interior">
+	 <script type="text/javascript">
+		var myform=new formtowizard({
+			formid: 'pain_scale',
+			persistsection: false,
+			revealfx: ['none']
+		})
+	</script> 
+		<div data-role="header" data-theme="b">
+		<h1>Numeric Rating Pain Scale</h1>
+		<a href="#" data-rel="back" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<form action="results.php" method="get" data-transition="pop" id="pain_scale">
+			<img src="../../../../images/pain_scale.png" width="100%" style="max-height: 45px" alt="Numeric rating scale, 0-10,  0 is no pain, 10 is extreme pain" />
+			<fieldset id="1" data-role="controlgroup" class="sectionwrap">
+				<legend>Intensity of pain should be measured using a numeric rating scale (0-10 scale) for each of the following:</legend>
+		    		<label for="current_pain">Current pain (right now):</label>
+					<input data-theme="e" alt="Scale 0-10"  type="range" name="current_painq" id="current_pain" value="0" min="0" max="10" />
+    		</fieldset>
+    		
+			<fieldset id="2" data-role="controlgroup" class="sectionwrap">
+	    		<label for="worst_pain">When pain is the worst:</label>
+				 	<input data-theme="e" alt="Scale 0-10"  type="range" name="worst_painq" id="worst_pain" value="0" min="0" max="10" />
+    		</fieldset>    		
+
+			<fieldset id="3" data-role="controlgroup" class="sectionwrap">
+	    		<label for="best_pain">When pain is the best</label>
+				 	<input data-theme="e" alt="Scale 0-10" type="range" name="best_pain" id="best_pain" value="0" min="0" max="10" />
+    		</fieldset>
+    		
+			<fieldset id="4" data-role="controlgroup" class="sectionwrap">
+	    		<label for="usual_pain">"Usual" or "average" pain in last week</label>
+				 	<input data-theme="e" alt="Scale 0-10" type="range" name="usual_pain" id="usual_pain" value="0" min="0" max="10" />
+    		</fieldset> 
+    		
+			<fieldset id="5" data-role="controlgroup" class="sectionwrap">
+	    		<label for="acceptable_pain">Acceptable (or tolerable) amount of pain</label>
+				 	<input data-theme="e" alt="Scale 0-10" type="range" name="acceptable_pain" id="acceptable_pain" value="0" min="0" max="10" />
+				 	<br /><br />
+				 	<button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+    		</fieldset>     		
+			</form>
+			</div><!--/content-primary -->		
+		</div><!-- /page -->
+
+		</body>
+		</html>

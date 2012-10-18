@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>AUDIT-C Assessment</title> 
+	<link rel="stylesheet"  href="../../../../jquery.mobile/jquery.mobile.css" />
+	<link rel="stylesheet" href="../../../../jquery.mobile/js/jquery.multipage.css" /> 
+	<script src="../../../../jquery.mobile/jquery.js"></script>
+	<script src="../../../../jquery.mobile/jquery.mobile.js"></script>
+</head> 
+<body> 
+
+	<div data-role="page" class="type-interior">
+	<script type="text/javascript">
+		var myform=new formtowizard({
+			formid: 'auditc',
+			persistsection: false,
+			revealfx: ['none']
+		})
+	</script> 
+		<div data-role="header" data-theme="b">
+		<h1>AUDIT-C</h1>
+		<a href="overview.html" data-icon="info" data-transition="pop" data-iconpos="notext" title="Overview" class="ui-btn-right">info</a>
+		<a href="#" data-rel="back" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<form action="results.php" method="get" data-transition="pop" id="auditc">
+			<fieldset id="gender" data-role="controlgroup" class="sectionwrap">
+			<legend><b>Patient Gender</b></legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="gender" id="genderM" value="1" checked="checked" />
+         		<label for="genderM">Male</label>
+
+         		<input type="radio" name="gender" id="genderF" value="0"/>
+         		<label for="genderF">Female</label>
+         		</div>
+    		</fieldset>			
+    		
+			<fieldset id="abuser" data-role="controlgroup" class="sectionwrap">
+			<legend><b>Active alcohol abuse or dependence?</b></legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="abuser" id="abuserY" value="1" checked="checked" />
+         		<label for="abuserY">Yes</label>
+
+         		<input type="radio" name="abuser" id="abuserN" value="0"/>
+         		<label for="abuserN">No</label>
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="auditcA" data-role="controlgroup" class="sectionwrap">
+			<legend><b>1. How often do you have a drink containing alcohol?</b></legend>
+    		<div data-role="fieldcontain" >
+         		<input type="radio" name="auditcA" id="auditcA0" value="0" checked="checked"  />
+         		<label for="auditcA0">A. Never</label>
+
+         		<input type="radio" name="auditcA" id="auditcA1" value="1"/>
+         		<label for="auditcA1">B. Monthly or less</label>
+
+         		<input type="radio" name="auditcA" id="auditcA2" value="2"/>
+         		<label for="auditcA2">C. 2-4 times a month</label>
+
+         		<input type="radio" name="auditcA" id="auditcA3" value="3"/>
+         		<label for="auditcA3">D. 2-3 times a week</label>
+         		
+         		<input type="radio" name="auditcA" id="auditcA4" value="3"/>
+         		<label for="auditcA4">E. 4 or more times a week</label>
+         		</div>
+    		</fieldset>
+
+    		<fieldset id="auditcB" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>2. How many standard drinks containing alcohol do you have on a typical day?</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="auditcB" id="auditcB0" value="0" checked="checked" />
+         		<label for="auditcB0">A. 1 or 2</label>
+
+         		<input type="radio" name="auditcB" id="auditcB1" value="1"/>
+         		<label for="auditcB1">B. 3 or 4</label>
+
+         		<input type="radio" name="auditcB" id="auditcB2" value="2"/>
+         		<label for="auditcB2">C. 5 or 6</label>
+
+         		<input type="radio" name="auditcB" id="auditcB3" value="3"/>
+         		<label for="auditcB3">D. 7 to 9</label>
+         		
+         		<input type="radio" name="auditcB" id="auditcB4" value="3"/>
+         		<label for="auditcB4">E. 10 or more</label>
+         		</div>
+    		</fieldset>
+				
+    		<fieldset id="auditcC" data-role="controlgroup" class="sectionwrap">
+    		<legend><b>How often do you have six or more drinks on one occasion?</b></legend>
+    			<div data-role="fieldcontain">
+         		<input type="radio" name="auditcC" id="auditcC0" value="0" checked="checked" />
+         		<label for="auditcC0">A. Never</label>
+
+         		<input type="radio" name="auditcC" id="auditcC1" value="1"/>
+         		<label for="auditcC1">B. Less than monthly</label>
+
+         		<input type="radio" name="auditcC" id="auditcC2" value="2"/>
+         		<label for="auditcC2">C. Monthly</label>
+
+         		<input type="radio" name="auditcC" id="auditcC3" value="3"/>
+         		<label for="auditcC3">D. Weekly</label>
+         		
+         		<input type="radio" name="auditcC" id="auditcC4" value="3"/>
+         		<label for="auditcC4">E. Daily or almost daily</label>
+         		<button type="submit" data-theme="a" name="submit" data-rel="dialog" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+         		</div>
+    		</fieldset>			
+			</form>
+			</div><!--/content-primary -->		
+		</div><!-- /page -->
+
+		</body>
+		</html>

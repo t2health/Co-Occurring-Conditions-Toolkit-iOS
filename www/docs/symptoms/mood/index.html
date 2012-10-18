@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> 
+	<title>Mood Symptoms</title> 
+</head> 
+<body > 
+<div data-role="page" data-dom-cache="true">
+	<div data-role="header" data-theme="b" data-position="inline">
+	<a href="#" data-rel="back" data-icon="arrow-l"  data-direction="reverse" class="ui-btn-left" onClick="clearChecked()">Back</a>
+		<h1>Mood Symptoms</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+<form action="results.php" method="get" data-transition="pop" id="symptoms">
+<div data-role="fieldcontain">
+ 	<fieldset data-role="controlgroup">
+		<legend>Select Mood Symptoms</legend>
+		<div class="symptoms">
+			<input type="checkbox" name="numbing" id="numbing" rel="numbing" />
+			<label for="numbing">Emotional numbing</label>
+	
+			<input type="checkbox" name="irritability" id="irritability" rel="irritability" />
+			<label for="irritability">Irritability</label>
+	
+			<input type="checkbox" name="efatigue" id="efatigue" rel="efatigue" />
+			<label for="efatigue">Emotional fatigue</label>
+			
+			<input type="checkbox" name="pfatigue" id="pfatigue" rel="pfatigue" />
+			<label for="pfatigue">Physical fatigue</label>
+			
+			<input type="checkbox" name="lack" id="lack" rel="lack" />
+			<label for="lack">Lack of enjoyment in most daily activities</label>
+						
+			<input type="checkbox" name="reminders" id="reminders" rel="reminders" />
+			<label for="reminders">Distress with traumatic reminders</label>
+						
+			<input type="checkbox" name="impulsivity" id="impulsivity" rel="impulsivity" />
+			<label for="impulsivity">Impulsivity</label>
+						
+			<input type="checkbox" name="medication" id="medication" rel="medication" />
+			<label for="medication">Activities driven by medication needs</label>
+
+			<input type="checkbox" name="hyperarousal" id="hyperarousal" rel="hyperarousal" />
+			<label for="hyperarousal">Hyperarousal</label>
+		</div>
+    </fieldset>
+            <button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+</div>
+</form>			 
+			</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

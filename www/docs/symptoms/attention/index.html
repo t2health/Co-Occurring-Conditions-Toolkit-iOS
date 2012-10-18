@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> 
+	<title>Select Attention Symptoms</title> 
+</head> 
+<body> 
+<div data-role="page" data-dom-cache="true">
+	<div data-role="header" data-theme="b" data-position="inline">
+	<a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left" onClick="clearChecked()">Back</a>
+		<h1>Attention Symptoms</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+<form action="results.php" method="get" data-transition="pop" id="symptoms">
+<div data-role="fieldcontain">
+ 	<fieldset data-role="controlgroup">
+		<legend>Select Attention Symptoms</legend>
+		<div class="symptoms">
+			<input type="checkbox" name="numbing" id="numbing"  rel="numbing" />
+			<label for="numbing">Emotional numbing</label>
+	
+			<input type="checkbox" name="intrusive" id="intrusive" rel="intrusive" />
+			<label for="intrusive">Re-experiences intrusive memories</label>
+	
+			<input type="checkbox" name="pain" id="pain" rel="pain" />
+			<label for="pain">Distracting pain</label>
+			
+			<input type="checkbox" name="multitasking" id="multitasking" rel="multitasking" />
+			<label for="multitasking">Difficulty multitasking</label>
+			
+			<input type="checkbox" name="distress" id="distress" rel="distress" />
+			<label for="distress">Worsens with emotional distress</label>
+						
+			<input type="checkbox" name="fatigue" id="fatigue" rel="fatigue" />
+			<label for="fatigue">Worsens with fatigue (physical or emotional)</label>
+						
+			<input type="checkbox" name="dissociative" id="dissociative" rel="dissociative" />
+			<label for="dissociative">Dissociative episodes</label>
+						
+			<input type="checkbox" name="withdrawal" id="withdrawal" rel="withdrawal" />
+			<label for="withdrawal">Worsens as withdrawal symptoms occur</label>
+		</div>
+    </fieldset>
+            <button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+</div>
+</form>	    
+			</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

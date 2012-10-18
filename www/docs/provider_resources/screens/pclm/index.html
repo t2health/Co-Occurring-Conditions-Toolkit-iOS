@@ -1,0 +1,401 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>PTSD PCL-M Checklist</title> 
+	<link rel="stylesheet"  href="../../../../jquery.mobile/jquery.mobile.css" />
+	<link rel="stylesheet" href="../../../../jquery.mobile/js/jquery.multipage.css" /> 
+	<script src="../../../../jquery.mobile/jquery.js"></script>
+	<script src="../../../../jquery.mobile/jquery.mobile.js"></script>
+</head> 
+<body> 
+
+	<div data-role="page" class="type-interior">
+
+	<script type="text/javascript">
+		var myform=new formtowizard({
+			formid: 'pclm',
+			persistsection: false,
+			revealfx: ['none']
+		})
+	</script> 
+		<div data-role="header" data-theme="b">
+		<h1>PTSD PCL-M Checklist</h1>
+		<a href="overview.html" data-icon="info" data-rel="dialog" data-transition="pop" data-iconpos="notext" title="Overview" class="ui-btn-right">Info</a>
+		<a href="#" data-rel="back" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left" >Back</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    
+		<form action="results.php" method="get" data-transition="pop" id="pclm">
+			<fieldset id="setting" data-role="controlgroup" class="sectionwrap">
+				<legend>Select your setting</legend>
+	    		<div data-role="fieldcontain">
+	         		<input type="radio" name="setting" id="ptsd_specialty" value="1" checked="checked" />
+	         		<label for="ptsd_specialty">VA PTSD specialty mental health clinic1</label>
+	
+	         		<input type="radio" name="setting" id="primary_care" value="2"/>
+	         		<label for="primary_care">VA Primary Care clinic 1</label>
+	
+	         		<input type="radio" name="setting" id="active_duty" value="3"/>
+	         		<label for="active_duty">Active duty Iraq/Afghanistan (OEF/OIF) 2</label>
+	
+	         		<input type="radio" name="setting" id="civilian_substance" value="4"/>
+	         		<label for="civilian_substance">Civilian substance abuse residential 3</label>
+	         		
+	         		<input type="radio" name="setting" id="civilian_primary" value="5"/>
+	         		<label for="civilian_primary">Civilian primary care 4-5</label>         	
+	         		
+	         		<input type="radio" name="setting" id="civilian_motor" value="6"/>
+	         		<label for="civilian_motor">Civilian motor vehicle accidents 6</label>  	
+	         		</div>
+    		</fieldset>
+			<fieldset id="pclmQ1" data-role="controlgroup" class="sectionwrap">
+			<legend>1. Repeated, <i>disturbing memories, thoughts, or images</i> of a stressful military experience?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ1" id="pclmQ1A" value="1" checked="checked" />
+         		<label for="pclmQ1A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ1" id="pclmQ1B" value="2"/>
+         		<label for="pclmQ1B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ1" id="pclmQ1C" value="3"/>
+         		<label for="pclmQ1C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ1" id="pclmQ1D" value="4"/>
+         		<label for="pclmQ1D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ1" id="pclmQ1E" value="5"/>
+         		<label for="pclmQ1E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+
+			<fieldset id="pclmQ2" data-role="controlgroup" class="sectionwrap">
+			<legend>2. Repeated, disturbing <i>dreams</i> of a stressful military experience?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ2" id="pclmQ2A" value="1" checked="checked" />
+         		<label for="pclmQ2A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ2" id="pclmQ2B" value="2"/>
+         		<label for="pclmQ2B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ2" id="pclmQ2C" value="3"/>
+         		<label for="pclmQ2C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ2" id="pclmQ2D" value="4"/>
+         		<label for="pclmQ2D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ2" id="pclmQ2E" value="5"/>
+         		<label for="pclmQ2E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+				
+			<fieldset id="pclmQ3" data-role="controlgroup" class="sectionwrap">
+			<legend>3. Suddenly <i>acting</i> or <i>feeling</i> as if a stressful military experience were <i>happening again</i> (as if you were reliving it)?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ3" id="pclmQ3A" value="1" checked="checked" />
+         		<label for="pclmQ3A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ3" id="pclmQ3B" value="2"/>
+         		<label for="pclmQ3B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ3" id="pclmQ3C" value="3"/>
+         		<label for="pclmQ3C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ3" id="pclmQ3D" value="4"/>
+         		<label for="pclmQ3D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ3" id="pclmQ3E" value="5"/>
+         		<label for="pclmQ3E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ4" data-role="controlgroup" class="sectionwrap">
+			<legend>4. Feeling <i>very upset</i> when <i>something reminded</i> you of a stressful military experience?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ4" id="pclmQ4A" value="1" checked="checked" />
+         		<label for="pclmQ4A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ4" id="pclmQ4B" value="2"/>
+         		<label for="pclmQ4B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ4" id="pclmQ4C" value="3"/>
+         		<label for="pclmQ4C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ4" id="pclmQ4D" value="4"/>
+         		<label for="pclmQ4D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ4" id="pclmQ4E" value="5"/>
+         		<label for="pclmQ4E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ5" data-role="controlgroup" class="sectionwrap">
+			<legend>5. Having <i>physical reactions</i> (e.g., heart pounding, trouble breathing, or sweating) when <i>something reminded</i> you of a stressful military experience?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ5" id="pclmQ5A" value="1" checked="checked" />
+         		<label for="pclmQ5A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ5" id="pclmQ5B" value="2"/>
+         		<label for="pclmQ5B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ5" id="pclmQ5C" value="3"/>
+         		<label for="pclmQ5C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ5" id="pclmQ5D" value="4"/>
+         		<label for="pclmQ5D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ5" id="pclmQ5E" value="5"/>
+         		<label for="pclmQ5E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ6" data-role="controlgroup" class="sectionwrap">
+			<legend>6. Avoid <i>thinking about</i> or <i>talking about</i> a stressful military experience or avoid <i>having feelings</i> related to it?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ6" id="pclmQ6A" value="1" checked="checked" />
+         		<label for="pclmQ6A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ6" id="pclmQ6B" value="2"/>
+         		<label for="pclmQ6B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ6" id="pclmQ6C" value="3"/>
+         		<label for="pclmQ6C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ6" id="pclmQ6D" value="4"/>
+         		<label for="pclmQ6D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ6" id="pclmQ6E" value="5"/>
+         		<label for="pclmQ6E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ7" data-role="controlgroup" class="sectionwrap">
+			<legend>7. Avoid <i>activities</i> or <i>situations</i> because <i>they remind you</i> of a stressful military experience?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ7" id="pclmQ7A" value="1" checked="checked" />
+         		<label for="pclmQ7A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ7" id="pclmQ7B" value="2"/>
+         		<label for="pclmQ7B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ7" id="pclmQ7C" value="3"/>
+         		<label for="pclmQ7C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ7" id="pclmQ7D" value="4"/>
+         		<label for="pclmQ7D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ7" id="pclmQ7E" value="5"/>
+         		<label for="pclmQ7E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset> 		       		   
+    		
+			<fieldset id="pclmQ8" data-role="controlgroup" class="sectionwrap">
+			<legend>8. Trouble <i>remembering important parts</i> of a stressful military experience?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ8" id="pclmQ8A" value="1" checked="checked" />
+         		<label for="pclmQ8A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ8" id="pclmQ8B" value="2"/>
+         		<label for="pclmQ8B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ8" id="pclmQ8C" value="3"/>
+         		<label for="pclmQ8C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ8" id="pclmQ8D" value="4"/>
+         		<label for="pclmQ8D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ8" id="pclmQ8E" value="5"/>
+         		<label for="pclmQ8E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>     	
+    		
+			<fieldset id="pclmQ9" data-role="controlgroup" class="sectionwrap">
+			<legend>9. Loss of <i>interest in things that you used to enjoy</i>?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ9" id="pclmQ9A" value="1" checked="checked" />
+         		<label for="pclmQ9A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ9" id="pclmQ9B" value="2"/>
+         		<label for="pclmQ9B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ9" id="pclmQ9C" value="3"/>
+         		<label for="pclmQ9C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ9" id="pclmQ9D" value="4"/>
+         		<label for="pclmQ9D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ9" id="pclmQ9E" value="5"/>
+         		<label for="pclmQ9E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ10" data-role="controlgroup" class="sectionwrap">
+			<legend>10. Feeling <i>distant</i> or <i>cut off</i> from other people?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ10" id="pclmQ10A" value="1" checked="checked" />
+         		<label for="pclmQ10A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ10" id="pclmQ10B" value="2"/>
+         		<label for="pclmQ10B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ10" id="pclmQ10C" value="3"/>
+         		<label for="pclmQ10C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ10" id="pclmQ10D" value="4"/>
+         		<label for="pclmQ10D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ10" id="pclmQ10E" value="5"/>
+         		<label for="pclmQ10E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ11" data-role="controlgroup" class="sectionwrap">
+			<legend>11. Feeling <i>emotionally numb</i> or being unable to have loving feelings for those close to you?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ11" id="pclmQ11A" value="1" checked="checked" />
+         		<label for="pclmQ11A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ11" id="pclmQ11B" value="2"/>
+         		<label for="pclmQ11B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ11" id="pclmQ11C" value="3"/>
+         		<label for="pclmQ11C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ11" id="pclmQ11D" value="4"/>
+         		<label for="pclmQ11D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ11" id="pclmQ11E" value="5"/>
+         		<label for="pclmQ11E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ12" data-role="controlgroup" class="sectionwrap">
+			<legend>12. Feeling as if your <i>future</i> will somehow be <i>cut short</i>?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ12" id="pclmQ12A" value="1" checked="checked" />
+         		<label for="pclmQ12A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ12" id="pclmQ12B" value="2"/>
+         		<label for="pclmQ12B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ12" id="pclmQ12C" value="3"/>
+         		<label for="pclmQ12C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ12" id="pclmQ12D" value="4"/>
+         		<label for="pclmQ12D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ12" id="pclmQ12E" value="5"/>
+         		<label for="pclmQ12E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset> 
+    		
+			<fieldset id="pclmQ13" data-role="controlgroup" class="sectionwrap">
+			<legend>13. Trouble <i>falling</i> or <i>staying</i> asleep?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ13" id="pclmQ13A" value="1" checked="checked" />
+         		<label for="pclmQ13A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ13" id="pclmQ13B" value="2"/>
+         		<label for="pclmQ13B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ13" id="pclmQ13C" value="3"/>
+         		<label for="pclmQ13C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ13" id="pclmQ13D" value="4"/>
+         		<label for="pclmQ13D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ13" id="pclmQ13E" value="5"/>
+         		<label for="pclmQ13E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>  
+    		
+			<fieldset id="pclmQ14" data-role="controlgroup" class="sectionwrap">
+			<legend>14. Feeling <i>irritable</i> or having <i>angry outbursts</i>?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ14" id="pclmQ14A" value="1" checked="checked" />
+         		<label for="pclmQ14A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ14" id="pclmQ14B" value="2"/>
+         		<label for="pclmQ14B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ14" id="pclmQ14C" value="3"/>
+         		<label for="pclmQ14C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ14" id="pclmQ14D" value="4"/>
+         		<label for="pclmQ14D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ14" id="pclmQ14E" value="5"/>
+         		<label for="pclmQ14E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset>
+    		
+			<fieldset id="pclmQ15" data-role="controlgroup" class="sectionwrap">
+			<legend>15. Having <i>difficulty concentrating</i>?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ15" id="pclmQ15A" value="1" checked="checked" />
+         		<label for="pclmQ15A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ15" id="pclmQ15B" value="2"/>
+         		<label for="pclmQ15B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ15" id="pclmQ15C" value="3"/>
+         		<label for="pclmQ15C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ15" id="pclmQ15D" value="4"/>
+         		<label for="pclmQ15D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ15" id="pclmQ15E" value="5"/>
+         		<label for="pclmQ15E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset> 
+    		
+			<fieldset id="pclmQ16" data-role="controlgroup" class="sectionwrap">
+			<legend>16. Being <i>"super alert"</i> or watchful on guard?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ16" id="pclmQ16A" value="1" checked="checked" />
+         		<label for="pclmQ16A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ16" id="pclmQ16B" value="2"/>
+         		<label for="pclmQ16B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ16" id="pclmQ16C" value="3"/>
+         		<label for="pclmQ16C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ16" id="pclmQ16D" value="4"/>
+         		<label for="pclmQ16D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ16" id="pclmQ16E" value="5"/>
+         		<label for="pclmQ16E">5 - Extremely</label>         		
+         		</div>
+    		</fieldset> 
+    		
+			<fieldset id="pclmQ17" data-role="controlgroup" class="sectionwrap">
+			<legend>17. Feeling <i>jumpy</i> or easily startled?</legend>
+    		<div data-role="fieldcontain">
+         		<input type="radio" name="pclmQ17" id="pclmQ17A" value="1" checked="checked" />
+         		<label for="pclmQ17A">1 - Not at all</label>
+
+         		<input type="radio" name="pclmQ17" id="pclmQ17B" value="2"/>
+         		<label for="pclmQ17B">2 - A little bit</label>
+
+         		<input type="radio" name="pclmQ17" id="pclmQ17C" value="3"/>
+         		<label for="pclmQ17C">3 - Moderately</label>
+
+         		<input type="radio" name="pclmQ17" id="pclmQ17D" value="4"/>
+         		<label for="pclmQ17D">4 - Quite a bit</label>
+         		
+         		<input type="radio" name="pclmQ17" id="pclmQ17E" value="5"/>
+         		<label for="pclmQ17E">5 - Extremely</label>         		
+         		<button type="submit" data-theme="a" name="submit" value="submit" data-transition="pop" data-rel="dialog">Submit</button>
+         		</div>
+    		</fieldset>     		     		    		      		      		    		    		 		 			
+				
+																											
+			</form>
+			</div><!--/content-primary -->		
+		</div><!-- /page -->
+
+		</body>
+		</html>

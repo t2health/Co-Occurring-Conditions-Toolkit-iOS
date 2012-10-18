@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Co-Occurring Conditions Toolkit</title>
+      <link rel="stylesheet" href="lib/jquery.mobile.css" />
+	  <link rel="stylesheet" href="lib/pgandjqm-style-override.css" />
+	  
+	  <script type="text/javascript" src="lib/jquery.js"></script>
+	  <script type="text/javascript" src="main.js"></script>
+	  <script type="text/javascript" src="lib/jquery.multipage.js"></script>
+	  <script type="text/javascript" src="lib/jquery.mobile.js"></script>
+	  <script type="text/javascript" src="phonegap.js"></script>
+	  <script type="text/javascript" src="flurry.js"></script>
+
+	  <link rel="apple-touch-icon" href="images/icon.png"/>
+	</head>
+  <body onload="onLoad()">
+    <div data-role="page" data-theme="b" id="home">
+  	<div data-role="header" data-theme="b">
+    	<h1>Co-Occurring Conditions Toolkit</h1>
+	</div>
+    <div data-role="content">
+    	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+			<li data-role="list-divider">Overview</li>
+			<li><a href="docs/about/index.html">About</a></li>
+			<li><a href="docs/overview/background/index.html">Background</a></li>
+			<li><a href="docs/overview/first_appoint.html">The First Appointment</a></li>
+			<li><a href="docs/overview/howto/index.html">How to Use this Guide</a></li>
+		</ul>
+		<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+			<li data-role="list-divider">Symptoms</li>
+			<li><a href="docs/symptoms/sleep/index.html">Sleep</a></li>
+			<li><a href="docs/symptoms/mood/index.html">Mood</a></li>
+			<li><a href="docs/symptoms/attention/index.html">Attention</a></li>
+			<li><a href="docs/symptoms/chronic_pain/index.html">Chronic Pain</a></li>
+		</ul>	
+		<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+			<li data-role="list-divider">Provider Resources</li>
+			<li><a href="docs/appendix1/medication/index.html">Medications</a></li>
+			<li><a href="docs/provider_resources/provider_tools.html">Provider Tools</a></li>
+			<li><a href="docs/patient_resources/patient_education.html">Patient Education</a></li>
+			<li><a href="docs/provider_resources/provider_web.html">Provider Websites</a></li>
+			<li><a href="docs/provider_resources/dsm-defin.html">DSM-IV-TR definitions</a></li>
+		</ul>		
+		
+		<!-- <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+			<li><a href="docs/about/index.html">About</a></li>
+		</ul> !-->	
+    	
+    </div><!-- end jqm content -->
+    <div data-role="footer" data-theme="b">
+		<!--<a href="docs/about/index.html" data-transition="pop" data-type="horizontal" data-inline="true">Credits</a> -->
+		<img src="images/T2_logo.png" alt="This mobile applicaiton was developed by the National Center for Telehealth and Technology" class="img-right" />
+	</div>
+    </div><!-- end jqm page -->
+  </body>
+</html>

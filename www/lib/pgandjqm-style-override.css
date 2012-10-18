@@ -1,0 +1,143 @@
+/* These overrides to the JQuery Mobile css file are used to
+ * allow more content in the headers and footers The original values are
+ * included in comments after each property. Attempted to change
+ * only a minimum number of values to achieve desired result.
+ */
+
+.ui-header .ui-title {
+	white-space: normal;
+	overflow: visible;
+}
+.ui-btn-left {
+	margin-left: 300px;
+	}
+
+/* JQM: margin-left, margin-right: 90px
+ *      
+ */
+
+.ui-listview .ui-li .ui-btn-text a.ui-link-inherit {white-space: normal;}
+
+/* JQM: margin-left, margin-right: 90px
+ *       white-space:nowrap
+ */
+ 
+ .ui-content { padding: 5px; }
+/* JQM: .ui-content { padding: 15px; }
+ *  Leave more space vertically for buttons etc
+ */ 
+ 
+ .ui-collapsible-contain { margin: .5em 7px; }
+ /* Collapsible bars touch sides w/out this.
+  */
+
+.cct {
+	background-image: url("images/cct-header.png");
+	background-repeat: no-repeat;
+	background: top center;
+	}
+
+.img-right {
+	float: right;
+	margin-right: 10px;
+}
+
+.green {
+	color: #456626;
+}
+
+/********************************* Additional CSS ***************************************/
+
+ 
+    table {
+        border: solid #000000;
+        text-align: left;
+        font-size: 14px;
+        border-width: 0px 1px 1px 0px;
+    }
+    td {
+    	 vertical-align: top;
+    	 text-align: left;
+    	}
+    th, td {
+        border: solid #000000;
+        border-width: 1px 0px 0px 1px;
+        padding: 2px;
+    }
+    th {
+        background-color: #5e87b0;
+        color: #FFFFFF;
+        font-weight:bold;
+        text-shadow:0 -1px 1px #000;
+        text-align: center;
+        
+    }
+    tr.alt td {
+        background-color: #EEEEEE;
+    }
+  /* tbody {
+       height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+   */
+
+   /* FORM CSS PAGINATION*/
+   fieldset.sectionwrap{ /*fieldset that wraps around each form "page" */
+				border-width:0;
+				padding:0px;
+}
+
+div.formpaginate{ /* CSS for pagination DIV container */
+				width: 100%;
+				overflow:hidden;
+				font-weight:bold;
+				text-align:center;
+				margin-top:0em;
+}
+
+div.formpaginate .next{ /*CSS for "prev" and "next" SPAN elements within paginate container */
+				background: #006b05; /* Old browsers */
+				background: -moz-linear-gradient(top, #006b05 0%, #003301 99%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006b05), color-stop(99%,#003301)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #006b05 0%,#003301 99%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #006b05 0%,#003301 99%); /* Opera11.10+ */
+				background: -ms-linear-gradient(top, #006b05 0%,#003301 99%); /* IE10+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b05', endColorstr='#003301',GradientType=0 ); /* IE6-9 */
+				background: linear-gradient(top, #006b05 0%,#003301 99%); /* W3C */
+				font-weight: bold; display:block; padding: 10px 20px; text-shadow: #333 1px 1px 5px; text-decoration:none; -moz-border-radius: 5px; border-radius: 5px;
+				color:white;
+				cursor:hand;
+				cursor:pointer;
+}
+div.formpaginate .next:hover { 	background: #034700; /* Old browsers */
+				background: -moz-linear-gradient(top, #034700 0%, #002109 99%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#034700), color-stop(99%,#002109)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #034700 0%,#002109 99%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #034700 0%,#002109 99%); /* Opera11.10+ */
+				background: -ms-linear-gradient(top, #034700 0%,#002109 99%); /* IE10+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034700', endColorstr='#002109',GradientType=0 ); /* IE6-9 */
+				background: linear-gradient(top, #034700 0%,#002109 99%); /* W3C */ text-decoration:none;}     
+				   
+div.formpaginate .prev{ /*CSS for "prev" and "next" SPAN elements within paginate container */
+				background: #a90329; /* Old browsers */
+				background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera11.10+ */
+				background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+				background: linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+				font-weight: bold; display:block; padding: 10px 20px; text-shadow: #333 1px 1px 5px; text-decoration:none;  -moz-border-radius: 5px; border-radius: 5px;
+				color:white;
+				cursor:hand;
+				cursor:pointer;
+}
+ div.formpaginate .prev:hover {	background: #510106; /* Old browsers */
+				background: -moz-linear-gradient(top, #510106 0%, #5b0103 45%, #440004 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#510106), color-stop(45%,#5b0103), color-stop(100%,#440004)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #510106 0%,#5b0103 45%,#440004 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #510106 0%,#5b0103 45%,#440004 100%); /* Opera11.10+ */
+				background: -ms-linear-gradient(top, #510106 0%,#5b0103 45%,#440004 100%); /* IE10+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#510106', endColorstr='#440004',GradientType=0 ); /* IE6-9 */
+				background: linear-gradient(top, #510106 0%,#5b0103 45%,#440004 100%); /* W3C */ text-decoration:none;}
